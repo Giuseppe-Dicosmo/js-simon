@@ -33,21 +33,30 @@ const userNum = alert(`Ciao ricorda questi 5 numeri "${arrayRandom.join(' - ')}"
 
 const clock = setTimeout(userNumber, 3000);
 
+  function correction() {
+
+    const userArray = userNumber()
+    console.log("🚀 ~ file: sript.js ~ line 64 ~ correction ~ userArray", userArray)
+
+  }
+
+  // funzioni numeri utente
   function userNumber () {
 
     let user;
 
+    // lista numeri utente
     const userInse = []
-    console.log("🚀 userInse", userInse)
-
 
     do {
 
+      //Chiediamo all'utente di inserire un numero
       user = parseInt(prompt('Bene ora inserisci quei 5 numeri visto'));
       // console.log("user", user)
 
+      // Se l'utente sbaglia viene visualizzato l'errore in caso contrario viene pushato nella lista
       if (isNaN(user)) {
-        alert('Quello che ai inserito non è un numero')
+        alert('Errore')
       } else {
         userInse.push(user)
       }
@@ -56,5 +65,6 @@ const clock = setTimeout(userNumber, 3000);
 
     return userInse;
   }
+
 
 

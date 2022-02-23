@@ -85,7 +85,7 @@ const clock = setTimeout(correction, 3000);
     } else if (verifica.length === 1) {
       alert(`Hai indovinato un solo numero ${verifica}`)
     } else {
-      alert(`Hai indovinato questi numeri ${verifica.join(' - ')}`)
+      alert(`Hai Totalizzato ${verifica.length} punti e questi sono numeri che ai indovinato ${verifica.join(' - ')}`)
     }
 
   }
